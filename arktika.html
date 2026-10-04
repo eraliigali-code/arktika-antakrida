@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Арктика vs Антарктида</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #dff6ff, #eefcff);
+            color: #17324d;
+        }
+
+        header {
+            background: linear-gradient(135deg, #075985, #0ea5e9);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 45px;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+        }
+
+        .image {
+            height: 230px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 80px;
+            color: white;
+        }
+
+        .arctic {
+            background: linear-gradient(135deg, #38bdf8, #2563eb);
+        }
+
+        .antarctic {
+            background: linear-gradient(135deg, #94a3b8, #334155);
+        }
+
+        .content {
+            padding: 25px;
+        }
+
+        .content h2 {
+            font-size: 30px;
+            margin-top: 0;
+        }
+
+        .content p {
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        .facts {
+            margin-top: 15px;
+            padding: 15px;
+            background: #f0f9ff;
+            border-radius: 12px;
+        }
+
+        .facts p {
+            margin: 8px 0;
+        }
+
+        .vs {
+            text-align: center;
+            margin: 35px 0;
+        }
+
+        .vs span {
+            background: #0f172a;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .difference {
+            background: white;
+            margin-top: 40px;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .difference h2 {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+        }
+
+        th {
+            background: #e0f2fe;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 25px;
+            background: #0f172a;
+            color: white;
+            text-align: center;
+        }
+
+        @media (max-width: 700px) {
+            .comparison {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            table {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>❄️ Арктика vs Антарктида 🐧</h1>
+        <p>Два удивительных холодных мира нашей планеты</p>
+    </header>
+
+    <div class="container">
+
+        <div class="vs">
+            <span>АРКТИКА 🆚 АНТАРКТИДА</span>
+        </div>
+
+        <div class="comparison">
+
+            <!-- АРКТИКА -->
+            <div class="card">
+
+                <div class="image arctic">
+                    🐻‍❄️
+                </div>
+
+                <div class="content">
+
+                    <h2>🌊 Арктика</h2>
+
+                    <p>
+                        Арктика — это северная полярная область Земли.
+                        Она находится вокруг Северного полюса и включает
+                        Северный Ледовитый океан и территории некоторых стран.
+                    </p>
+
+                    <div class="facts">
+                        <p>🐻‍❄️ Животные: белый медведь, морж, тюлень</p>
+                        <p>🌡️ Очень холодный климат</p>
+                        <p>🌊 В центре находится океан</p>
+                        <p>🌍 Расположена на севере Земли</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- АНТАРКТИДА -->
+            <div class="card">
+
+                <div class="image antarctic">
+                    🐧
+                </div>
+
+                <div class="content">
+
+                    <h2>🧊 Антарктида</h2>
+
+                    <p>
+                        Антарктида — материк, расположенный вокруг Южного
+                        полюса Земли. Почти вся поверхность материка покрыта
+                        толстым слоем льда.
+                    </p>
+
+                    <div class="facts">
+                        <p>🐧 Животные: пингвины, тюлени, киты</p>
+                        <p>🥶 Самый холодный материк Земли</p>
+                        <p>🏔️ Огромные ледяные покровы</p>
+                        <p>🌍 Расположена на юге Земли</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- СРАВНЕНИЕ -->
+        <div class="difference">
+
+            <h2>🔎 Главное отличие</h2>
+
+            <table>
+
+                <tr>
+                    <th>Характеристика</th>
+                    <th>🌊 Арктика</th>
+                    <th>🧊 Антарктида</th>
+                </tr>
+
+                <tr>
+                    <td>Расположение</td>
+                    <td>Север</td>
+                    <td>Юг</td>
+                </tr>
+
+                <tr>
+                    <td>Основа</td>
+                    <td>Океан и лёд</td>
+                    <td>Материк и лёд</td>
+                </tr>
+
+                <tr>
+                    <td>Известное животное</td>
+                    <td>🐻‍❄️ Белый медведь</td>
+                    <td>🐧 Пингвин</td>
+                </tr>
+
+                <tr>
+                    <td>Люди</td>
+                    <td>Есть населённые районы</td>
+                    <td>Постоянного населения нет</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <footer>
+        ❄️ Проект «Арктика и Антарктида» | 2026
+    </footer>
+
+</body>
+</html>
